@@ -7,7 +7,7 @@ function addNewWorkExperienceField(){
     newNode.setAttribute("rows", 5);
     newNode.setAttribute("placeholder", "Enter here");
 
-    let workExperienceOb = getElementById("workExperience");
+    let workExperienceOb = document.getElementById("workExperience");
     let workExperienceAddButtonOb=document.getElementById("workExperienceAddButton");    
     workExperienceOb.insertBefore(newNode, workExperienceAddButtonOb);
 
@@ -22,7 +22,7 @@ function addNewAcedemicQualificationField(){
     newNode.setAttribute("rows", 5);
     newNode.setAttribute("placeholder", "Enter here");
 
-    let acedemicQualificationOb = getElementById("acedemicQualification");
+    let acedemicQualificationOb = document.getElementById("acedemicQualification");
     let acedemicQualificationAddButtonOb=document.getElementById("acedemicQualificationAddButton");    
     acedemicQualificationOb.insertBefore(newNode, acedemicQualificationAddButtonOb);
 
