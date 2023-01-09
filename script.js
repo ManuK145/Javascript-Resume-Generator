@@ -4,7 +4,7 @@ function addNewWorkExperienceField(){
     newNode.classList.add("form-control");
     newNode.classList.add("workExperienceField");
     newNode.classList.add("mt-2");
-    newNode.setAttribute("rows", 5);
+    newNode.setAttribute("rows", 2);
     newNode.setAttribute("placeholder", "Enter here");
 
     let workExperienceOb = document.getElementById("workExperience");
@@ -19,7 +19,7 @@ function addNewAcedemicQualificationField(){
     newNode.classList.add("form-control");
     newNode.classList.add("acedemicQualificationField");
     newNode.classList.add("mt-2");
-    newNode.setAttribute("rows", 5);
+    newNode.setAttribute("rows", 2);
     newNode.setAttribute("placeholder", "Enter here");
 
     let acedemicQualificationOb = document.getElementById("acedemicQualification");
