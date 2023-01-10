@@ -27,3 +27,9 @@ function addNewAcedemicQualificationField(){
     acedemicQualificationOb.insertBefore(newNode, acedemicQualificationAddButtonOb);
 
 }
+
+function generateCV(){
+    let nameField=document.getElementById("nameField").value;
+    let nameT1 = document.getElementById("nameT1");
+    nameT1.innerHTML=nameField;
+}
