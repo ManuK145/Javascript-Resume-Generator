@@ -1,5 +1,7 @@
+//User can click the button and add more work experience fields
 function addNewWorkExperienceField(){
 
+    //Using linked lists
     let newNode=document.createElement("textarea");
     newNode.classList.add("form-control");
     newNode.classList.add("workExperienceField");
@@ -13,8 +15,10 @@ function addNewWorkExperienceField(){
 
 }
 
+//User can click the button and add more acedemic qualification fields
 function addNewAcedemicQualificationField(){
 
+    //Using linked lists
     let newNode=document.createElement("textarea");
     newNode.classList.add("form-control");
     newNode.classList.add("acedemicQualificationField");
@@ -28,6 +32,7 @@ function addNewAcedemicQualificationField(){
 
 }
 
+//Take the information filled in "Generate CV" fomr and put it in CV template fields
 function generateCV(){
     let nameField=document.getElementById("nameField").value;
     let nameT1 = document.getElementById("nameT1");
@@ -61,6 +66,7 @@ function generateCV(){
     }
     document.getElementById("acedemicQualificationT").innerHTML=str1;
 
+    //Prompts user to select image from system and adds it to CV
     let file=document.getElementById("imgField").files[0];
     console.log(file);
     let reader= new FileReader();
@@ -76,7 +82,7 @@ function generateCV(){
     document.getElementById("cv-template").style.display="block";
 }   
 
-
+//Prints the CV by opening print window.
 function printCV(){
    window.print(); 
 }
