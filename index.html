@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale = 1.0" />
         
+        <!-- CSS Bootstrap integration-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
         rel="stylesheet" 
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
@@ -15,14 +16,17 @@
     </head>
     <body>
 
+        <!--Layout for first page that prompts the user to fill in their info-->
         <div class = "container" id="cv-form">
             <h1 class="text-center my-3"> RESUME GENERATOR</h1>
 
+            <!--Using bootstrap grid feature to divide page into two sections-->
             <div class = "row">
                 <div class = "col-md-6">
                     
                     <h3> Personal Information</h3>
-                
+                    
+                    <!--Field that displays name information-->
                     <div class = "form-group">
                         <label for="nameField"> Your Name</label>
                         <input type="text" 
@@ -31,6 +35,7 @@
                         class="form-control">
                     </div>
 
+                    <!--Field that displays contact information-->
                     <div class = "form-group mt-3">
                         <label for="contactField"> Your Contact</label>
                         <input type="text" 
@@ -39,6 +44,7 @@
                         class="form-control">
                     </div>
 
+                    <!--Field that displays address information-->
                     <div class = "form-group">
                         <label for="addressField"> Your Address</label>
                         <textarea id="addressField" 
@@ -47,6 +53,7 @@
                         rows="4"></textarea>
                     </div>
 
+                    <!--Field for selecting photo from your system-->
                     <div class="form-group mt-3">
                         <label for="">Select your photo</label>
                         <input id="imgField"  type="file" class="form-control"/>
@@ -54,6 +61,7 @@
 
                     <p class="text-secondary my-3">Important Links</p>
                     
+                    <!--Field for providing link to facebook account-->
                     <div class = "form-group mt-3">
                         <label for="fbField"> Facebook</label>
                         <input type="text" 
@@ -62,6 +70,7 @@
                         class="form-control">
                     </div>
 
+                    <!--Field for providing link to instagram account-->
                     <div class = "form-group mt-3">
                         <label for="instaField"> Instagram</label>
                         <input type="text" 
@@ -70,6 +79,7 @@
                         class="form-control">
                     </div>
 
+                    <!--Field for providing link to linkedin account-->
                     <div class = "form-group mt-3">
                         <label for="linkedField"> Linkedin</label>
                         <input type="text" 
@@ -79,9 +89,12 @@
                     </div>
 
                 </div>
+                
+                <!--Second half of the page displaying professional information-->
                 <div class = "col-md-6">
                     <h3> Professional Information</h3>
 
+                    <!--Field for listing the Objective-->
                     <div class = "form-group">
                         <label for=""> Objective</label>
                         <textarea id="objectiveField"
@@ -90,6 +103,7 @@
                         rows="5"></textarea>
                     </div>
 
+                    <!--Field for listing the Work Experience-->
                     <div class = "form-group mt-2" id="workExperience">
                         <label for=""> Work Experience</label>
                         <textarea placeholder="Enter Here" 
@@ -97,12 +111,14 @@
                         rows="2"></textarea>
                         <div class="container text-center mt-2" 
                         id="workExperienceAddButton">
+                            <!--On pressing this button, user can add new work experience fields-->
                             <button onclick="addNewWorkExperienceField()" 
                             class="btn btn-primary btn-sm" 
                             >Add</button>
                         </div>
                     </div>
 
+                    <!--Field for listing the Acedemic Qualifications-->
                     <div class = "form-group" id="acedemicQualification">
                         <label for=""> Academic Qualification</label>
                         <textarea placeholder="Enter Here" 
@@ -110,6 +126,7 @@
                         rows="2"></textarea>
                         <div class="container text-center mt-3" 
                         id="acedemicQualificationAddButton">
+                            <!--On pressing this button, user can add new acedemic qualification fields-->
                             <button onclick="addNewAcedemicQualificationField()"
                             class="btn btn-primary btn-sm" 
                             >Add</button>
@@ -125,18 +142,23 @@
             
         </div>
 
+        <!--Layout for second page where filled out information is displayed in a CV format-->
         <div class="container" id="cv-template">
 
             <div class="row">
 
+                <!--Using bootstrap gris feature to divide page in 4:8 ratio-->
                 <div class="col-md-4 text-center py-5 background">
 
+                    <!--Field for displaying chosen image-->
                     <img src="https://img.freepik.com/free-icon/user_318-864557.jpg?w=2000"
                     alt=""
                     class="img-fluid myimg"
                     id="imgTemplate"
                     />
 
+                    <!--Field for displaying filled in personal information-->
+                    <!--The information listed down is arbitrary-->
                     <div class="container">
                         <p id="nameT1"> XYZ</p>
                         <p id="contactT">07490761637,073637822</p>
@@ -144,6 +166,7 @@
 
                         <hr />
 
+                        <!--These links are arbitrary-->
                         <p> <a id="fbT" href="#1"> https://www.linkedin.com/in/manpreet-k-6242ba11b</a></p>
                         <p> <a id="instaT" href="#1"> https://www.linkedin.com/in/manpreet-k-6242ba11b</a></p>
                         <p> <a id="linkedT" href="#1"> https://www.linkedin.com/in/manpreet-k-6242ba11b</a></p>
@@ -154,10 +177,12 @@
 
                 </div>
                 
+                <!--Using bootstrap gris feature to divide page in 4:8 ratio-->
                 <div class="col-md-8 mt-4 text-center background"> 
 
                     <h1 id="nameT2" class="text-center" style="font-weight: 980;">XYZ</h1>
 
+                    <!--Field that displayes filled in Objective column-->
                     <div class=" card mt-4">
                         <div class="card-header background">
                             <h3>Objective</h3>
@@ -167,6 +192,7 @@
                         </div>                    
                     </div>
 
+                    <!--Field that displayes filled in Work Experience column-->
                     <div class=" card mt-4">
                         <div class="card-header background">
                             <h3>Work Experience</h3>
@@ -180,6 +206,7 @@
                         </div>                    
                     </div>
 
+                    <!--Field that displayes filled in Acedemic Qualification column-->
                     <div class=" card mt-4">
                         <div class="card-header background">
                             <h3>Acedemic Qualification</h3>
@@ -193,6 +220,7 @@
                         </div>                    
                     </div>
 
+                    <!--CV can be printed out upon pressing this button-->
                     <div class="container mt-3 text-center">
                         <button onclick="printCV()"
                         class="btn background">
@@ -207,6 +235,7 @@
 
         </div>
 
+        <!--Javascript bootstrap integration-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" 
         crossorigin="anonymous"></script>
