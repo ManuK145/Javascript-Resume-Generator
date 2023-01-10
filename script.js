@@ -49,20 +49,20 @@ function generateCV(){
 
     let workExperienceArray= document.getElementsByClassName("workExperienceField");
     let str="";
-    for(let i of workExperienceArray){
-        str = str + `<li> ${i.value}</li>`;
+    for(let e of workExperienceArray){
+        str = str + `<li> ${e.value} </li>`;
     }
     document.getElementById("workExperienceT").innerHTML=str;
 
     let acedemicQualificationArray= document.getElementsByClassName("acedemicQualificationField");
     let str1="";
-    for(let i of acedemicQualificationArray){
-        str1 = str1 + `<li> ${i.value}</li>`;
+    for(let e of acedemicQualificationArray){
+        str1 = str1 + `<li> ${e.value} </li>`;
     }
     document.getElementById("acedemicQualificationT").innerHTML=str1;
 
-    document.getElementById("cv-form").style.display='none';
-    
+    document.getElementById("cv-form").style.display="none";
+    document.getElementById("cv-template").style.display="block";
 }   
 
 
