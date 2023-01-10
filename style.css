@@ -1,10 +1,18 @@
+body{
+    background-color: #3d7e92;
+}
+
 #cv-form{
-    display:none;
+    /*display: 'none'*/
+}
+
+#cv-template{
+    display: none;
 }
 
 .myimg {
-    border-radius: 50%;
-    width: 200px;
+    border-radius: 70%;
+    width: 150px;
 
 }
 
