@@ -79,7 +79,8 @@
 
                     <div class = "form-group">
                         <label for=""> Objective</label>
-                        <textarea placeholder="Enter Here" 
+                        <textarea id="objectiveField"
+                        placeholder="Enter Here" 
                         class="form-control" 
                         rows="5"></textarea>
                     </div>
@@ -112,8 +113,9 @@
 
                 </div>
             </div>
-            <div class="conatiner text-center mt-3">
-                <button class="btn btn-primary btn-lg"> Generate CV</button>
+            <div class="container text-center mt-3">
+                <button onclick="generateCV()"
+                class="btn btn-primary btn-lg"> Generate CV</button>
             </div>
             
         </div>
@@ -122,7 +124,7 @@
 
             <div class="row">
 
-                <div class="col-md-4 text-center py-5 background">
+                <div class="col-md-4 text-center mt-4 background">
 
                     <img src="https://img.freepik.com/free-icon/user_318-864557.jpg?w=2000"
                     alt=""
@@ -130,32 +132,32 @@
                     />
 
                     <div class="container">
-                        <p> XYZ</p>
-                        <p>07490761637,073637822</p>
-                        <p>372827383737 abcgdudd ub25bb</p>
+                        <p id="nameT1"> XYZ</p>
+                        <p id="contactT">07490761637,073637822</p>
+                        <p class="addressT">372827383737 abcgdudd ub25bb</p>
 
                         <hr />
 
-                        <p> <a href="#1"> https://www.linkedin.com/in/manpreet-k-6242ba11b</a></p>
-                        <p> <a href="#1"> https://www.linkedin.com/in/manpreet-k-6242ba11b</a></p>
-                        <p> <a href="#1"> https://www.linkedin.com/in/manpreet-k-6242ba11b</a></p>
+                        <p> <a id="fbT" href="#1"> https://www.linkedin.com/in/manpreet-k-6242ba11b</a></p>
+                        <p> <a id="instaT" href="#1"> https://www.linkedin.com/in/manpreet-k-6242ba11b</a></p>
+                        <p> <a id="linkedT" href="#1"> https://www.linkedin.com/in/manpreet-k-6242ba11b</a></p>
 
 
-                        </div>
+                        
                     </div>
 
                 </div>
                 
-                <div class="col-md-8 text-center py-5"> 
+                <div class="col-md-8 mt-4 text-center"> 
 
-                    <h1 class="text-center" style="font-weight: 980;">XYZ</h1>
+                    <h1 id="nameT2" class="text-center" style="font-weight: 980;">XYZ</h1>
 
                     <div class=" card mt-4">
                         <div class="card-header background">
                             <h3>Objective</h3>
                         </div>
                         <div class="card-body">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt repellendus dignissimos itaque animi quod aliquid a laboriosam, ea sit corrupti ducimus fugiat, repudiandae libero deleniti quasi iste accusamus illum magni unde at! Eos ea dolorum reiciendis aliquid, enim quidem facere iure voluptatem in cum laboriosam hic, assumenda error, sapiente repellat!</p>
+                            <p id="objectiveT">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt repellendus dignissimos itaque animi quod aliquid a laboriosam, ea sit corrupti ducimus fugiat, repudiandae libero deleniti quasi iste accusamus illum magni unde at! Eos ea dolorum reiciendis aliquid, enim quidem facere iure voluptatem in cum laboriosam hic, assumenda error, sapiente repellat!</p>
                         </div>                    
                     </div>
 
@@ -164,7 +166,7 @@
                             <h3>Work Experience</h3>
                         </div>
                         <div class="card-body">
-                            <ul>
+                            <ul id="workExperienceT">
                                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, aliquam?</li>
                             </ul>
                             <ul>
@@ -181,7 +183,7 @@
                             <h3>Acedemic Qualification</h3>
                         </div>
                         <div class="card-body">
-                            <ul>
+                            <ul id="acedemicQualificationT">
                                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, aliquam?</li>
                             </ul>
                             <ul>
@@ -194,7 +196,8 @@
                     </div>
 
                     <div class="container mt-3 text-center">
-                        <button class="btn background">
+                        <button onclick="printCV()"
+                        class="btn background">
                             Print CV
                         </button>
                     </div>
