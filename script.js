@@ -61,6 +61,17 @@ function generateCV(){
     }
     document.getElementById("acedemicQualificationT").innerHTML=str1;
 
+    let file=document.getElementById("imgField").files[0];
+    console.log(file);
+    let reader= new FileReader();
+    reader.readAsDataURL(file);
+    console.log(reader.result);
+    reader.onloadend=function(){
+        document.getElementById("imgTemplate").src=reader.result;
+    }
+   
+
+
     document.getElementById("cv-form").style.display="none";
     document.getElementById("cv-template").style.display="block";
 }   
